@@ -50,9 +50,9 @@ In the same directory that the app is in:
 
 In the EC2 machine:
 
-<code>cd /home/ubuntu
-npm install
-npm start </code>
+<code>cd /home/ubuntu</code>
+<code>npm install</code>
+<code>npm start</code>
 
 In AWS:
 - Select your instance (SRE_sacha_app)
