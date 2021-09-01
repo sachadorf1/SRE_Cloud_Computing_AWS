@@ -1,6 +1,6 @@
 # Cloud Computing AWS
 ## EC2 Machine Set Up
-### Log in to AWS
+Log in to AWS:
 - Change location to Ireland
 - In the Instance tab, click Launch instance
 - Choose AMI
