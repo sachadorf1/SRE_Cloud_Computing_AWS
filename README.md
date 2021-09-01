@@ -51,7 +51,9 @@ In the same directory that the app is in:
 In the EC2 machine:
 
 <code>cd /home/ubuntu</code>
+
 <code>npm install</code>
+
 <code>npm start</code>
 
 In AWS:
