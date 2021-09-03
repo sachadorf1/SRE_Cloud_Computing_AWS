@@ -1,6 +1,6 @@
 # Cloud Computing AWS
 ## App Virtual Machine Set Up
-- Log in to AWS
+### Log in to AWS
 - Change location to Ireland
 - In the Instance tab, click Launch instance
 - Choose AMI
@@ -22,25 +22,30 @@
 - Review and Launch
 - Select key pair: sre_key (should be in your .ssh file)
 
-In git bash:
+### In git bash:
 
 - Make key read-only
 
 <code>chmod 400 sre_key.pem</code>
 
 - Connect to the instance (use code provided in SSH Client tab when you click connect)
-
+e.g.
 <code>ssh -i "sre_key.pem" ubuntu@ec2-34-241-239-127.eu-west-1.compute.amazonaws.com
 </code>
 
 - Install dependencies
 
-        sudo apt-get update -y
-        sudo apt-get upgrade -y
-        sudo apt-get install nginx -y
-        sudo apt-get install python-software-properties -y
-        curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-        sudo apt-get install nodejs -y
+<code>sudo apt-get update -y
+
+sudo apt-get upgrade -y
+
+sudo apt-get install nginx -y
+
+sudo apt-get install python-software-properties -y
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+sudo apt-get install nodejs -y</code>
 
 - Copy the app directory to the cloud:
 
@@ -48,17 +53,19 @@ In the same directory that the app is in:
 e.g.
 <code>scp -ri ~/.ssh/sre_key.pem app ubuntu@34.241.239.127:/home/ubuntu/app</code>
 
-In the EC2 machine:
+### In the EC2 machine:
 
-<code>cd /home/ubuntu/app
+- Go into the app directory
 
-npm install pm2 -y</code>
+<code>cd /home/ubuntu/app</code>
+
+<code>npm install pm2 -y</code>
 
 <code>npm install</code>
 
 <code>npm start</code>
 
-In AWS:
+### In AWS:
 - Select your instance (SRE_sacha_app)
 - Go to security
 - Click on security group
@@ -122,14 +129,13 @@ sudo systemctl status mongod</code>
 
 - Connect to the instance (use code provided in SSH Client tab when you click connect)
 e.g.
-
 <code>ssh -i "sre_key.pem" ubuntu@ec2-34-241-239-127.eu-west-1.compute.amazonaws.com
 </code>
 
+- Change the default file
 
 <code> sudo nano /etc/nginx/sites-available/default </code>
 
-- Change the default file
 
         server {
             listen 80;
