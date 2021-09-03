@@ -1,4 +1,9 @@
 # Cloud Computing AWS
+
+
+<img width="709" alt="vagrantdiagram" src="https://user-images.githubusercontent.com/88316764/131989127-ccf858b1-9539-436e-b3e7-83d35dd213c5.png">
+
+
 ## App Virtual Machine Set Up
 ### Log in to AWS
 - Change location to Ireland
