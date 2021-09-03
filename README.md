@@ -52,7 +52,7 @@ In the EC2 machine:
 
 <code>cd /home/ubuntu/app
 
-npm install pm2 -y
+npm install pm2 -y</code>
 
 <code>npm install</code>
 
@@ -70,7 +70,7 @@ In AWS:
 
 App should show on port 3000
 
-# Database Virtual Machine Set Up
+## Database Virtual Machine Set Up
 - Log in to AWS
 - Change location to Ireland
 - In the Instance tab, click Launch instance
