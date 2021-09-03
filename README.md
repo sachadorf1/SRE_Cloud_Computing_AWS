@@ -1,5 +1,4 @@
 # Cloud Computing AWS
-
 ## App Virtual Machine Set Up
 - Log in to AWS
 - Change location to Ireland
@@ -55,9 +54,9 @@ In the EC2 machine:
 
 npm install pm2 -y
 
-npm install
+<code>npm install</code>
 
-npm start </code>
+<code>npm start</code>
 
 In AWS:
 - Select your instance (SRE_sacha_app)
