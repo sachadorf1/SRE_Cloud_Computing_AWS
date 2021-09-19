@@ -1,4 +1,6 @@
 # Cloud Computing AWS
+<img width="709" alt="vagrantdiagram" src="https://user-images.githubusercontent.com/88316764/131989127-ccf858b1-9539-436e-b3e7-83d35dd213c5.png">
+
 - [Cloud Computing AWS](#cloud-computing-aws)
   - [App Virtual Machine Set Up](#app-virtual-machine-set-up)
     - [Log in to AWS](#log-in-to-aws)
@@ -8,6 +10,7 @@
   - [Database Virtual Machine Set Up](#database-virtual-machine-set-up)
   - [Set up reverse proxy on app virtual machine:](#set-up-reverse-proxy-on-app-virtual-machine)
   - [Creating an AMI of the app and db machines](#creating-an-ami-of-the-app-and-db-machines)
+
 
 ## App Virtual Machine Set Up
 ### Log in to AWS
